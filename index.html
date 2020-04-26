@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body>
+    <h1 id="clcickc" onclick="vis(this)">Нажми сюда плс :с</h1>
+    <h1 id="anima">го бравл старс?</h1>
+    <button onclick="casual()">тач ми энд зен джаст точ ми</button>
+    <button onclick="gobr()">пацаны</button>
+    <button onclick="ala()">иншалла алахх блах блах</button>
+</body>
+<script>
+    function vis(A) {
+        A.classList.add("hid");
+    }
+    function ala() {
+        Swal.fire({
+  title: 'هل تريد الاستمرار؟',
+  icon: 'question',
+  iconHtml: '؟',
+  confirmButtonText: 'نعم',
+  cancelButtonText: 'لا',
+  showCancelButton: true,
+  showCloseButton: true
+})
+    }
+    function gobr() {
+        Swal.fire(
+  'Го бравл?)))))))))',
+  'плиз)',
+  'question'
+)
+    }
+    function casual() {
+        Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'пасиб)',
+  showConfirmButton: false,
+  timer: 1500
+})
+    }
+</script>
+</html>

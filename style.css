@@ -1,0 +1,39 @@
+.hid {
+    transition: 3s;
+    opacity: 0;
+}
+:root{
+    --my_blue: rgb(200, 200, 0);
+    --my_red: rgb(200, 100, 30);
+    --my_green: rgb(130, 48, 13);
+  }
+@keyframes anime{
+0%{ color: var(--my_blue);}
+ 1%{transform: rotate(0deg);}
+ 20%{transform: rotate(-380deg);}
+ 30%{transform: translateX(50px);}
+ 40%{transform: scaleY(-1);}
+ 49%{color: var(--my_red)}
+ 50%{transform: scaleX(-1);}
+ 60%{transform: scale(1.2, 0.5);}
+ 70%{transform: scew(-30deg, 30deg);}
+ 79%{color: var(--my_green);}
+ 80%{transform: matrix(1.2,0,0.5,1.2,50,0);}
+ 90%{transform: translate(40px, -40px);}
+ 100%{color: var(--my_blue);}
+}
+#anima {
+    font-size: 6em;
+    margin-top: 10%;
+    width: 33%;
+    margin-left: 33%
+}
+#anima {
+    animation: anime 10s infinite;
+}
+#clcickc {
+    cursor: pointer;
+}
+body {
+    text-align: center;
+}
